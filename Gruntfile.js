@@ -240,7 +240,7 @@ module.exports = function(grunt) {
 
   // by default, run tests
   grunt.registerTask('default', [
-    'test'
+    'stable'
   ]);
 
   // Release
