@@ -1,14 +1,14 @@
-/*! 
- * LESS - Leaner CSS v1.7.0 
- * http://lesscss.org 
- * 
- * Copyright (c) 2009-2014, Alexis Sellier <self@cloudhead.net> 
- * Licensed under the Apache v2 License. 
- * 
- */ 
+/*!
+ * Less - Leaner CSS v1.7.0
+ * http://lesscss.org
+ *
+ * Copyright (c) 2009-2014, Alexis Sellier <self@cloudhead.net>
+ * Licensed under the Apache v2 License.
+ *
+ */
 
  /** * @license Apache v2
- */ 
+ */
 
 
 
@@ -712,7 +712,7 @@ less.Parser = function Parser(env) {
         //
         //   Ruleset ->  Rule -> Value -> Expression -> Entity
         //
-        // Here's some LESS code:
+        // Here's some Less code:
         //
         //    .class {
         //      color: #fff;
@@ -7916,6 +7916,13 @@ less.refresh(less.env === 'development');
 // Define Less as an AMD module.
 if (typeof define === "function" && define.amd) {
     define(function () { return less; } );
+}
+
+// cmd.js
+//
+// Define Less as an CMD module.
+if (typeof define === "function" && define.cmd) {
+    define(function ( require, exports, module ) { module.exports(less); } );
 }
 
 })(window);

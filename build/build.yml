@@ -24,6 +24,7 @@ prepend:
 
 append:
   amd:     build/amd.js
+  cmd:     build/cmd.js
   browser: <%= build.lib %>/browser.js
   rhino:   <%= build.lib %>/rhino.js
 
@@ -76,6 +77,7 @@ browser:
   # append browser-specific code
   - <%= build.append.browser %>
   - <%= build.append.amd %>
+  - <%= build.append.cmd %>
 
 
 # =================================
